@@ -1,0 +1,50 @@
+Public Property
+@api can also control by salesforce org by using targetconfiguration
+and property
+
+constructor(One time intialization of any thing)
+
+
+
+connectedCallback(Called only once not true)
+
+here the component is not rendered yet so you can change the styling.
+
+also get data from database,so that component can use that data during rendering.
+
+settting up event listner on different element
+
+setup caching
+
+lighning message service (Communicate with other component)
+
+--cannot callout to child component
+
+if re-rendered  connectedcallback is also called.
+
+called again when removed and then re insert
+
+
+
+renderedCallback()[Most dangerous lifecycle hook](Called only once not true)
+
+if you changes any variable value/property that is present in the template, then this hook callup
+
+-- prepration for child component
+-- like connectedcallback for child component
+
+
+
+
+render() not used mostly 
+to change the UI, to control what should you render
+-- like mobile - mobileTemplate
+-- like desktopo - desktoptemplate
+
+
+
+disconnecteCallback() not used mostly
+
+to clean cache/memory used by component
+
+
